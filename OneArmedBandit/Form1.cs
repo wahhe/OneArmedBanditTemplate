@@ -12,9 +12,9 @@ namespace OneArmedBandit
     public partial class Form1 : Form
     {
         // random number generator
-
+        Random randGen = new Random();
         // int value for score initialized to 10
-
+        int reel1Value, reel2Value, reel3Value;
 
         public Form1()
         {
@@ -24,8 +24,9 @@ namespace OneArmedBandit
         private void spinButton_Click(object sender, EventArgs e) 
         {
             // get random values for each reel (store each in separate int variable)
-
-
+            reel1Value = randGen.Next(1, 11);
+            reel2Value = randGen.Next(1, 11);
+            reel3Value = randGen.Next(1, 11);
             // check value of reel 1 with a switch statement and set appropriate image
 
 
